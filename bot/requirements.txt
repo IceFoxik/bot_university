@@ -1,0 +1,6 @@
+sqlalchemy
+aiogram
+asyncpg
+
+8040196337:AAHM-ekXN0XOzj9TGTfPBe_pMWKnUMNiiMI
+
