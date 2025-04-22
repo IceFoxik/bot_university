@@ -53,7 +53,6 @@ async def add_schedule_start(message: types.Message, state: FSMContext):
 
 @dp.message(AddScheduleState.day_name)
 async def process_day_name(message: types.Message, state: FSMContext):
-    print(message.text)
     await state.update_data(day_name=message.text)
     await message.reply("Введите номер пары:")
     await state.set_state(AddScheduleState.pair_number)
