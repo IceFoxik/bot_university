@@ -9,6 +9,6 @@ async def init_db():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
 
-if name == "__main__":
+if __name__ == "__main__":
     import asyncio
     asyncio.run(init_db())
