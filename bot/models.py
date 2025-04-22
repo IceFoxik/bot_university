@@ -12,8 +12,8 @@ class Couples(Base):
     __tablename__ = 'couples'
     id = Column(Integer, primary_key=True)
     pair_number = Column(Integer, nullable=False)
-    start_time = Column(Time, nullable=False)
-    end_time = Column(Time, nullable=False)
+    start_time = Column(String, nullable=False)
+    end_time = Column(String, nullable=False)
 
 class Groups(Base):
     __tablename__ = 'groups'
